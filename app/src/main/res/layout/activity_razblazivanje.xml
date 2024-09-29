@@ -1,0 +1,172 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".RazblazivanjeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-86dp"
+        tools:layout_editor_absoluteY="-17dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Naslov -->
+
+            <ImageButton
+                android:id="@+id/clearBtn_zeljena"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end|center_vertical"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Clear text"
+                android:padding="8dp"
+                android:src="@drawable/ic_clear"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/etKrajnjaJacina"
+                app:layout_constraintStart_toEndOf="@+id/etKrajnjaJacina"
+                app:layout_constraintTop_toTopOf="@+id/etKrajnjaJacina"
+                app:layout_constraintVertical_bias="0.986" />
+
+            <ImageButton
+                android:id="@+id/clearBtn_kolicina"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end|center_vertical"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Clear text"
+                android:padding="8dp"
+                android:src="@drawable/ic_clear"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/etPocetnaKolicina"
+                app:layout_constraintStart_toEndOf="@+id/etPocetnaKolicina"
+                app:layout_constraintTop_toTopOf="@+id/etPocetnaKolicina"
+                app:layout_constraintVertical_bias="0.106" />
+
+            <TextView
+                android:id="@+id/tvHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/izracunavanje_razblazivanja"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tvPocetnaKolicina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/label_pocetna_kolicina"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHeader" />
+
+            <EditText
+                android:id="@+id/etPocetnaKolicina"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="4dp"
+                android:hint="@string/hint_pocetna_kolicina"
+                android:inputType="numberDecimal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPocetnaKolicina"
+                app:layout_constraintWidth_percent="0.7" />
+
+            <ImageButton
+                android:id="@+id/clearBtn_pocetna"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end|center_vertical"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Clear text"
+                android:padding="8dp"
+                android:src="@drawable/ic_clear"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/etPocetnaJacina"
+                app:layout_constraintStart_toEndOf="@+id/etPocetnaJacina"
+                app:layout_constraintTop_toTopOf="@+id/etPocetnaJacina"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tvPocetnaJacina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/label_pocetna_jacina"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etPocetnaKolicina" />
+
+            <EditText
+                android:id="@+id/etPocetnaJacina"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:hint="@string/hint_pocetna_jacina"
+                android:inputType="numberDecimal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPocetnaJacina"
+                app:layout_constraintWidth_percent="0.7" />
+
+            <TextView
+                android:id="@+id/tvZeljenaKolicina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/label_zeljena_kolicina"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etPocetnaJacina" />
+
+            <EditText
+                android:id="@+id/etKrajnjaJacina"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="16dp"
+                android:hint="@string/hint_krajnja_jacina"
+                android:inputType="numberDecimal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvZeljenaKolicina"
+                app:layout_constraintWidth_percent="0.7" />
+
+            <Button
+                android:id="@+id/btnIzracunaj"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/button_izracunaj"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etKrajnjaJacina"
+                app:layout_constraintWidth_percent="0.5" />
+
+            <TextView
+                android:id="@+id/tvRezultat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/result_placeholder"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnIzracunaj" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

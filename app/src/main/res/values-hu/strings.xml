@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Alkohol Kalkulátor</string>
+    <string-array name="referentne_vrednosti">
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+	    <!-- Cím -->
+    <string name="welcome_message">Üdvözöljük az Alkohol Kalkulátorban</string>
+    <string name="button_kalk_alc">Alkohol Kalkulátor</string>
+    <string name="button_razbl_alc">Hígítás Kalkulátor</string>
+    <string name="author_name">Szerző: Milan Lakatos Petrović</string>
+    <string name="content_description_background_image">Háttérkép</string>
+
+    <string name="kalkulator_alkohola">Alkohol Kalkulátor</string>
+    <string name="ocitana_vrednost_label">Mért alkohol érték (%)</string>
+    <string name="unos_vrednosti_hint">Adja meg a mért értéket</string>
+    <string name="temperatura_label">Hőmérséklet (°C)</string>
+    <string name="unos_temperature_hint">Adja meg a hőmérsékletet</string>
+    <string name="referentna_temperatura_label">Referencia hőmérő érték (°C)</string>
+    <string name="izracunaj">Számítás</string>
+    <string name="prava_jacina">Valódi alkohol tartalom: </string>
+    <string name="prava_jacina_gradi">Valódi erősség fokokban: </string>
+
+    <!-- Cím -->
+    <string name="izracunavanje_razblazivanja">Hígítás Számítása</string>
+
+    <!-- Címkék -->
+    <string name="label_pocetna_kolicina">Alkohol mennyiség (L)</string>
+    <string name="hint_pocetna_kolicina">Adja meg a kezdeti mennyiséget</string>
+    <string name="label_pocetna_jacina">Kezdeti erősség (%)</string>
+    <string name="hint_pocetna_jacina">Adja meg a kezdeti erősséget</string>
+    <string name="label_zeljena_kolicina">Kívánt erősség (%)</string>
+    <string name="hint_krajnja_jacina">Adja meg a kívánt erősséget</string>
+    <string name="button_izracunaj">Számítás</string>
+    <string name="result_placeholder">Az eredmény itt lesz megjelenítve</string>
+
+    <string name="empty_fields_warning">Kérjük, töltse ki az összes mezőt.</string>
+    <string name="invalid_temperature_range">A maximális és minimális hőmérsékletérték 30°C és 1°C!</string>
+    <string name="invalid_value">Kérjük, adjon meg érvényes értékeket!</string>
+    <string name="invalid_alcohol_range">Az alkoholtartalomnak 1 és 100 között kell lennie.</string>
+    <string name="alcohol_strength">Az alkoholtartalom: %1$s%%</string>
+    <string name="alcohol_strength_grad">Az alkoholtartalom grad-ban: %1$s grad</string>
+
+    <string name="alcohol_value_range_error">Az alkoholtartalomnak 1 és 100 között kell lennie.</string>
+
+    <string name="alcohol_strength_not_found">A megadott erősség nem található a táblázatban.</string>
+    <string name="add_water">Adjon hozzá %.2f liter desztillált vizet. Végső mennyiség összenyomással: %.2f liter.</string>
+
+</resources>

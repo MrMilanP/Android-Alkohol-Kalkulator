@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Alcohol Calculator</string>
+    <string-array name="referentne_vrednosti">
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+
+    <!-- Title -->
+    <string name="welcome_message">Welcome to Alcohol Calculator</string>
+    <string name="button_kalk_alc">Alcohol Calculator</string>
+    <string name="button_razbl_alc">Dilution Calculator</string>
+    <string name="author_name">Author: Milan Lakatos Petrović</string>
+    <string name="content_description_background_image">Background image</string>
+
+    <string name="kalkulator_alkohola">Alcohol Calculator</string>
+    <string name="ocitana_vrednost_label">Measured alcohol value (%)</string>
+    <string name="unos_vrednosti_hint">Enter measured value</string>
+    <string name="temperatura_label">Temperature (°C)</string>
+    <string name="unos_temperature_hint">Enter temperature</string>
+    <string name="referentna_temperatura_label">Reference thermometer value (°C)</string>
+    <string name="izracunaj">Calculate</string>
+    <string name="prava_jacina">Actual alcohol strength: </string>
+    <string name="prava_jacina_gradi">Actual strength in degrees: </string>
+
+    <!-- Title -->
+    <string name="izracunavanje_razblazivanja">Dilution Calculation</string>
+
+    <!-- Labels -->
+    <string name="label_pocetna_kolicina">Alcohol quantity (L)</string>
+    <string name="hint_pocetna_kolicina">Enter initial quantity</string>
+    <string name="label_pocetna_jacina">Initial strength (%)</string>
+    <string name="hint_pocetna_jacina">Enter initial strength</string>
+    <string name="label_zeljena_kolicina">Desired strength (%)</string>
+    <string name="hint_krajnja_jacina">Enter desired strength</string>
+    <string name="button_izracunaj">Calculate</string>
+    <string name="result_placeholder">Result will be displayed here</string>
+
+    <string name="empty_fields_warning">Please fill in all fields.</string>
+    <string name="invalid_temperature_range">The maximum and minimum temperature values are 30°C and 1°C!</string>
+    <string name="invalid_value">Please enter valid values!</string>
+    <string name="invalid_alcohol_range">The measured alcohol value must be between 1 and 100.</string>
+    <string name="alcohol_strength">Actual alcohol strength: %1$s%%</string>
+    <string name="alcohol_strength_grad">Actual strength in grad: %1$s grad</string>
+
+    <string name="alcohol_value_range_error">The measured alcohol value must be between 1 and 100.</string>
+
+    <string name="alcohol_strength_not_found">The entered strength was not found in the table.</string>
+    <string name="add_water">Add %.2f liters of distilled water. Final quantity considering compression: %.2f liters.</string>
+
+
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".KalkulatorActivity">
+    <!-- Dodaj ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- Naslov aplikacije -->
+
+            <ImageButton
+                android:id="@+id/clearBtn_temepratura"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end|center_vertical"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Clear text"
+                android:padding="8dp"
+                android:src="@drawable/ic_clear"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/etTemperatura"
+                app:layout_constraintStart_toEndOf="@+id/etTemperatura"
+                app:layout_constraintTop_toTopOf="@+id/etTemperatura"
+                app:layout_constraintVertical_bias="0.986" />
+
+            <ImageButton
+                android:id="@+id/clearBtn_ocitana_vrednost"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end|center_vertical"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Clear text"
+                android:padding="8dp"
+                android:src="@drawable/ic_clear"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/etOcitanaVrednost"
+                app:layout_constraintStart_toEndOf="@+id/etOcitanaVrednost"
+                app:layout_constraintTop_toTopOf="@+id/etOcitanaVrednost"
+                app:layout_constraintVertical_bias="0.986" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/kalkulator_alkohola"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Unos očitane vrednosti alkohola -->
+            <TextView
+                android:id="@+id/tvOcitanaVrednost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/ocitana_vrednost_label"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+            <!-- Unos temperature -->
+            <EditText
+                android:id="@+id/etOcitanaVrednost"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:digits="0123456789"
+                android:hint="@string/unos_vrednosti_hint"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvOcitanaVrednost"
+                app:layout_constraintWidth_percent="0.7" />
+
+            <TextView
+                android:id="@+id/tvTemperatura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/temperatura_label"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etOcitanaVrednost" />
+
+            <EditText
+                android:id="@+id/etTemperatura"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:digits="0123456789"
+                android:hint="@string/unos_temperature_hint"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTemperatura"
+                app:layout_constraintWidth_percent="0.7" />
+
+            <!-- Unos referentne temperature alkoholmetra -->
+            <TextView
+                android:id="@+id/tvReferentnaTemperatura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/referentna_temperatura_label"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etTemperatura" />
+
+            <!-- Dugme za izračunavanje -->
+
+            <Spinner
+                android:id="@+id/spinnerReferentnaTemperatura"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvReferentnaTemperatura"
+                app:layout_constraintWidth_percent="0.7" />
+
+            <Button
+                android:id="@+id/btnIzracunaj"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/izracunaj"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerReferentnaTemperatura"
+                app:layout_constraintWidth_percent="0.5" />
+
+            <!-- Prikaz rezultata -->
+            <TextView
+                android:id="@+id/tvRezultat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/prava_jacina"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnIzracunaj" />
+
+            <TextView
+                android:id="@+id/tvRezultatGradi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="@string/prava_jacina_gradi"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRezultat" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

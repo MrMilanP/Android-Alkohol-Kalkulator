@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Elegant Theme -->
+    <style name="ElegantTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary Color -->
+        <item name="colorPrimary">#2C3E50</item>
+        <item name="colorPrimaryVariant">#34495E</item>
+        <item name="colorOnPrimary">#ECF0F1</item>
+
+        <!-- Secondary Color -->
+        <item name="colorSecondary">#BDC3C7</item>
+        <item name="colorSecondaryVariant">#95A5A6</item>
+        <item name="colorOnSecondary">#2C3E50</item>
+
+        <!-- Background and Surface -->
+        <item name="android:background">#FFFFFF
+        </item> <!-- Correct attribute for background color -->
+        <item name="android:colorBackground">#FFFFFF</item> <!-- Use this for background color -->
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnBackground">#2C3E50</item>
+        <item name="colorOnSurface">#2C3E50</item>
+
+        <!-- Text Colors -->
+        <item name="android:textColorPrimary">#2C3E50</item>
+        <item name="android:textColorSecondary">#7F8C8D</item>
+    </style>
+
+    <style name="DistilleryTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#6D4C41</item>
+        <item name="colorPrimaryVariant">#4E342E</item>
+        <item name="colorOnPrimary">#FFD54F</item>
+
+        <item name="colorSecondary">#FFD54F</item>
+        <item name="colorSecondaryVariant">#FFC107</item>
+        <item name="colorOnSecondary">#6D4C41</item>
+
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnBackground">#6D4C41</item>
+        <item name="colorOnSurface">#6D4C41</item>
+
+        <item name="android:textColorPrimary">#6D4C41</item>
+        <item name="android:textColorSecondary">#FFD54F</item>
+    </style>
+
+    <style name="PlumOrchardTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#6D28D9</item>
+        <item name="colorPrimaryVariant">#4A1A80</item>
+        <item name="colorOnPrimary">#F5F5F5</item>
+
+        <item name="colorSecondary">#7E57C2</item>
+        <item name="colorSecondaryVariant">#6D28D9</item>
+        <item name="colorOnSecondary">#F5F5F5</item>
+
+        <item name="android:background">#F0F4C3</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnBackground">#6D28D9</item>
+        <item name="colorOnSurface">#6D28D9</item>
+
+        <item name="android:textColorPrimary">#6D28D9</item>
+        <item name="android:textColorSecondary">#7E57C2</item>
+    </style>
+
+    <style name="TraditionalPlumTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#5E35B1</item>
+        <item name="colorPrimaryVariant">#4A148C</item>
+        <item name="colorOnPrimary">#FFD54F</item>
+
+        <item name="colorSecondary">#6D4C41</item>
+        <item name="colorSecondaryVariant">#4E342E</item>
+        <item name="colorOnSecondary">#FFD54F</item>
+        <item name="android:background">#D7CCC8</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnBackground">#5E35B1</item>
+        <item name="colorOnSurface">#5E35B1</item>
+
+        <item name="android:textColorPrimary">#5E35B1</item>
+        <item name="android:textColorSecondary">#FFD54F</item>
+    </style>
+
+    <style name="DistillationCopperTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#B87333</item>
+        <item name="colorPrimaryVariant">#8C5E2F</item>
+        <item name="colorOnPrimary">#F5F5DC</item>
+
+        <item name="colorSecondary">#F5F5DC</item>
+        <item name="colorSecondaryVariant">#D4AF37</item>
+        <item name="colorOnSecondary">#B87333</item>
+
+        <item name="android:background">#C19085</item>
+        <item name="colorSurface">#5D4037</item>
+        <item name="colorOnBackground">#B87333</item>
+        <item name="colorOnSurface">#B87333</item>
+
+        <item name="android:textColorPrimary">#B87333</item>
+        <item name="android:textColorSecondary">#F5F5DC</item>
+    </style>
+    <style name="NatureTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#4CAF50</item>
+        <item name="colorPrimaryVariant">#388E3C</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <item name="colorSecondary">#8D6E63</item>
+        <item name="colorSecondaryVariant">#6D4C41</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+
+        <item name="android:background">#E8F5E9</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnBackground">#4CAF50</item>
+        <item name="colorOnSurface">#4CAF50</item>
+
+        <item name="android:textColorPrimary">#4CAF50</item>
+        <item name="android:textColorSecondary">#8D6E63</item>
+    </style>
+</resources>

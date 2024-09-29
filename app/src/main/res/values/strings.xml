@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Alkohol Kalkulator</string>
+    <string-array name="referentne_vrednosti">
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+
+    <!-- Naslov -->
+    <string name="welcome_message">Dobrodošli u Alkohol Kalkulator</string>
+    <string name="button_kalk_alc">Kalkulator alkohola</string>
+    <string name="button_razbl_alc">Razblaživanje alkohola</string>
+    <string name="author_name">Autor: Milan Lakatoš Petrović</string>
+    <string name="content_description_background_image">Pozadinska slika</string>
+
+    <string name="kalkulator_alkohola">Kalkulator Alkohola</string>
+    <string name="ocitana_vrednost_label">Očitana vrednost alkohola (%)</string>
+    <string name="unos_vrednosti_hint">Unesite očitanu vrednost</string>
+    <string name="temperatura_label">Temperatura (°C)</string>
+    <string name="unos_temperature_hint">Unesite temperaturu</string>
+    <string name="referentna_temperatura_label">Referentna vrednost alkoholmetra (°C)</string>
+    <string name="izracunaj">Izračunaj</string>
+    <string name="prava_jacina">Prava jačina alkohola: </string>
+    <string name="prava_jacina_gradi">Prava jačina u gradima: </string>
+
+    <!-- Naslov -->
+    <string name="izracunavanje_razblazivanja">Izračunavanje razblaživanja alkohola</string>
+
+    <!-- Etikete -->
+    <string name="label_pocetna_kolicina">Količina alkohola (L)</string>
+    <string name="hint_pocetna_kolicina">Unesite početnu količinu</string>
+    <string name="label_pocetna_jacina">Početna jačina (%)</string>
+    <string name="hint_pocetna_jacina">Unesite početnu jačinu</string>
+    <string name="label_zeljena_kolicina">Željena jačina (%)</string>
+    <string name="hint_krajnja_jacina">Unesite željenu jačinu</string>
+    <string name="button_izracunaj">Izračunaj</string>
+    <string name="result_placeholder">Rezultat će biti prikazan ovde</string>
+
+
+    <string name="empty_fields_warning">Molimo popunite sva polja.</string>
+    <string name="invalid_temperature_range">Maksimalna i minimalna vrednost temperature su 30°C i 1°C!</string>
+    <string name="invalid_value">Molimo unesite ispravne vrednosti!</string>
+    <string name="invalid_alcohol_range">Očitana vrednost alkohola mora biti između 1 i 100.</string>
+    <string name="alcohol_strength">Prava jačina alkohola: %1$s%%</string>
+    <string name="alcohol_strength_grad">Prava jačina u gradima: %1$s grad</string>
+
+    <string name="alcohol_value_range_error">"Očitana vrednost alkohola mora biti između 1 i 100"</string>
+
+
+    <string name="alcohol_strength_not_found">Uneta jačina nije pronađena u tabeli.</string>
+    <string name="add_water">Dodajte %.2f litara destilovane vode. Konačna količina sa sažimanjem: %.2f litara.</string>
+
+
+</resources>
